@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9a825, #f57f17);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quiz-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+
+.left-pane, .right-pane {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-pane {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.right-pane {
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+#quiz-image:hover {
+    transform: scale(1.05);
+}
+
+#question-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#options button:hover {
+    background: linear-gradient(to right, #e52e71, #ff8a00);
+    transform: scale(1.05);
+}
+
+#next-button {
+    display: none;
+    margin: 20px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#next-button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+#next-button:focus {
+    outline: none;
+}
+

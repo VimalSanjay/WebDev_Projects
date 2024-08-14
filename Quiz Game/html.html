@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Left pane for questions and options -->
+        <div class="left-pane">
+            <div id="question-container">
+                <p id="question-text"></p>
+                <div id="options">
+                    <button data-index="0">Option 1</button>
+                    <button data-index="1">Option 2</button>
+                    <button data-index="2">Option 3</button>
+                </div>
+            </div>
+            <button id="next-button" onclick="nextPersonality()">NEXT</button>
+        </div>
+
+        <!-- Right pane for the image -->
+        <div class="right-pane">
+            <img id="quiz-image" src="" alt="Personality Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
